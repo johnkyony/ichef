@@ -53,6 +53,15 @@
       <ion-label>Card Button Item 2</ion-label>
     </ion-item>
   </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let item of images">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item"></ion-img>
+      </ion-thumbnail>
+      <ion-label>Images</ion-label>
+    </ion-item>
+  </ion-list>
   
   
 </ion-content>
