@@ -7,6 +7,10 @@ const routes: Routes = [
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'recipes-list', loadChildren: './pages/recipes-list/recipes-list.module#RecipesListPageModule' },
   { path: 'recipes-details', loadChildren: './pages/recipes-details/recipes-details.module#RecipesDetailsPageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
+  { path: 'checkout', loadChildren: './pages/checkout/checkout.module#CheckoutPageModule' },
+  { path: 'landing', loadChildren: './pages/landing/landing.module#LandingPageModule' },
 ];
 
 @NgModule({
