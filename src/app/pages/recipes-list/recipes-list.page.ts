@@ -16,6 +16,7 @@ export class RecipesListPage implements OnInit {
     this.onReadRecipes().subscribe(data => {
       data.map(res => {
         console.log(res.payload.doc.data()['content']);
+        
       });
     });
 
