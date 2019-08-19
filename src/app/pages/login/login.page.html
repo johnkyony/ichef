@@ -5,6 +5,23 @@
 </ion-header>
  
 <ion-content padding>
-  <ion-button (click)="login()" expand="block">Login</ion-button>
-  <ion-button expand="block" color="secondary" routerLink="/register" routerDirection="forward">Register</ion-button>
+  <form>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input  type="email" placeholder="Your email Address"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" >
+      <ion-label>Your password needs more than 6 characters.</ion-label>
+    </ion-item>
+
+    <ion-button expand="block"  fill="clear" routerLink="/home">
+      Log In 
+    </ion-button>
+  </form>
+  <ion-button expand="block" fill="clear" routerLink="/signup">
+    Create a new account
+  </ion-button>
+  <ion-button expand="block" fill="clear" routerLink="/reset-password">
+    I forgot my password :(
+  </ion-button>
 </ion-content>
