@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+// import {AuthService} from '../../services/user/auth.service'
+import {LoadingController , AlertController} from '@ionic/angular'
+import {FormBuilder , FormGroup , Validators} from '@angular/forms'
+import {Router} from '@angular/router'
+import { AuthService } from '../services/user/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -7,7 +12,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterPage implements OnInit {
 
-  constructor() { }
+  public signupForm: FormGroup
+  public loading: any
+  constructor(
+    // private authService: AuthService
+  ) { }
 
   ngOnInit() {
   }
