@@ -4,8 +4,8 @@ import {AuthGuard} from './services/user/auth.guard'
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' , canActivate: [AuthGuard] },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule'  },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'recipes-list', loadChildren: './pages/recipes-list/recipes-list.module#RecipesListPageModule' , canActivate: [AuthGuard] },
   { path: 'recipes-details', loadChildren: './pages/recipes-details/recipes-details.module#RecipesDetailsPageModule'  , canActivate: [AuthGuard] },
